@@ -25,7 +25,7 @@ var render = Render.create({
 });
 
 // render balls
-let numberOfBalls = 200;
+let numberOfBalls = 600;
 let ballSize = 20;
 let delay = ballSize*2;
 
@@ -46,7 +46,7 @@ for (let i = 0; i < numberOfBalls; i++ ) {
 
 var ground = Bodies.rectangle(
   matterContainer.clientWidth / 2,
-  matterContainer.clientHeight + THICCNESS / 2,
+  matterContainer.clientHeight + THICCNESS / 2 - 60,
   27184,
   THICCNESS,
   { isStatic: true }
